@@ -23,3 +23,21 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=marble_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# lunaris config
+TARGET_CUSTOM_UDFPS := false
+WITH_GMS := true
+WITH_GMS_COMMS_SUITE := true
+WITH_PIXEL_LAUNCHER := false
+TARGET_USE_MAPS := true
+TARGET_USE_FILES := true
+USE_REALITY_ENGINE := true
+TARGET_USE_WALLPAPERS := false
+TARGET_USE_GPHOTOS := true
+SURFACE_FLINGER_BOOST := true
+
+<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
+<integer name="config_aodMaxRefreshRate">60</integer>
+
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
