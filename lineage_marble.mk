@@ -35,6 +35,3 @@ USE_REALITY_ENGINE := true
 TARGET_USE_WALLPAPERS := false
 TARGET_USE_GPHOTOS := true
 SURFACE_FLINGER_BOOST := true
-
-$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
-$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
