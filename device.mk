@@ -19,6 +19,10 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-marble/device.mk)
 # Basic Call Recorder
 $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc
