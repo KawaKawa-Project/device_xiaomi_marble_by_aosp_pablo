@@ -36,8 +36,5 @@ TARGET_USE_WALLPAPERS := false
 TARGET_USE_GPHOTOS := true
 SURFACE_FLINGER_BOOST := true
 
-<!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
-<integer name="config_aodMaxRefreshRate">60</integer>
-
 $(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
 $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
