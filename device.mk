@@ -84,3 +84,7 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.xiaomi)
 $(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
+
+# PowerHAL Config
+PRODUCT_COPY_FILES += \
+    device/xiaomi/marble/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
