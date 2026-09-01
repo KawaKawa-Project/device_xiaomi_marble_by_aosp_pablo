@@ -16,6 +16,16 @@
       "Values": [ "2918400", "2188800", "1056000" ]
     },
     {
+      "Name": "CPUBigClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq",
+      "Values": [ "1766400", "2496000" ]
+    },
+    {
+      "Name": "CPUPrimeClusterMaxFreq",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq",
+      "Values": [ "2188800", "2918400" ]
+    },
+    {
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [ "580000000", "400000000", "220000000" ]
@@ -70,6 +80,18 @@
       "PowerHint": "GAME",
       "Type": "Enable",
       "Value": "GPUMinFreq",
+      "ValueId": 0
+    },
+    {
+      "PowerHint": "CHARGING",
+      "Type": "Enable",
+      "Value": "CPUBigClusterMaxFreq",
+      "ValueId": 0
+    },
+    {
+      "PowerHint": "CHARGING",
+      "Type": "Enable",
+      "Value": "CPUPrimeClusterMaxFreq",
       "ValueId": 0
     }
   ]
