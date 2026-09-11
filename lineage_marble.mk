@@ -23,3 +23,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=marble_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# lunaris config
+TARGET_CUSTOM_UDFPS := false
+WITH_GMS := false
+WITH_GMS_COMMS_SUITE := false
+WITH_PIXEL_LAUNCHER := false
+TARGET_USE_MAPS := false
+TARGET_USE_FILES := false
+USE_REALITY_ENGINE := true
+TARGET_USE_WALLPAPERS := false
+TARGET_USE_GPHOTOS := false
+SURFACE_FLINGER_BOOST := true
